@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-=tqlhc_t20!qk^j2c_#(xd_nr^2eu_++5@cmh2y!4=e_$2k!8q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost', '192.168.5.103',
+]
+
+# Run server localhost: python manage.py runserver 192.168.5.103:8000
 
 
 # Application definition
@@ -38,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'base',
+    'user'
 ]
 
 MIDDLEWARE = [
